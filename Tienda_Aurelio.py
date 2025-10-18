@@ -105,7 +105,7 @@ while True:
         print("\t\t\t iii.	Un producto puede aparecer en muchos detalles de venta → relación 1:N \n")
         
         from PIL import Image
-        imagen = Image.open("")
+        imagen = Image.open("https://github.com/MiriamChen10/Tienda_Aurelio/blob/0a7dcd9181b6f68fb658e8b85801797c4c0d18cd/DER%20original.png")
         imagen.show()
         print(imagen.size)
 
