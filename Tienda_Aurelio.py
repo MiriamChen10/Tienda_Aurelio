@@ -104,12 +104,7 @@ while True:
         print("\t\t\t ii.	Una venta puede tener muchos detalles de venta → relación 1:N ")
         print("\t\t\t iii.	Un producto puede aparecer en muchos detalles de venta → relación 1:N \n")
         
-        from PIL import Image
-        imagen = Image.open("https://github.com/MiriamChen10/Tienda_Aurelio/blob/0a7dcd9181b6f68fb658e8b85801797c4c0d18cd/DER%20original.png")
-        imagen.show()
-        print(imagen.size)
-
-
+        print("Aquí se encuentra el link del Diagrama de Entidad Relacional" + "https://github.com/MiriamChen10/Tienda_Aurelio/blob/0a7dcd9181b6f68fb658e8b85801797c4c0d18cd/DER%20original.png"+"\n")
 
         print("\t -	A través del DER se puede observar que: \n")
         print("\t\t a.	la tabla Detalle_Ventas presenta los atributos nombre_producto y precio_unitario de forma redundante, ya que esta información puede y debe obtenerse de la tabla de Productos a través de la clave foránea de id_producto. ")
