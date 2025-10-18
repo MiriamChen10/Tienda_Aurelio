@@ -1,7 +1,6 @@
 
 #-*- coding: utf-8 -*-
 
-
 def mostrar_menu():
     print("Bienvenidos a la Tienda Aurelio")
     print("\n--- MENÚ PRINCIPAL ---")
@@ -14,9 +13,9 @@ def mostrar_menu():
 
 while True:
     mostrar_menu()
-    opcion = input("Elige una opción (1-6): ")
+    opcion = input("Elige una opción (1-6): \n")
 
-    if opcion == 1:
+    if opcion == "1":
         print("\nTEMA: Este proyecto simula la gestión de “Tienda Aurelio”, una tienda minorista, utilizando datos sintéticos.")
         print("PROBLEMA: La falta de integración y acceso a datos provenientes de múltiples bases de datos impide tener una visión clara del negocio y su rentabilidad. Esta situación también obstaculiza el análisis, la visualización y el modelado efectivo de la información.\n ")
         print("SOLUCIÓN: El objetivo principal es analizar estas bases de datos. Para ello, se procederá a analizar cada una, identificando sus entidades, atributos, tipos de datos, escalas de medición y las relaciones entre ellas. El resultado será un escenario de datos consistente que permita:")
@@ -24,7 +23,7 @@ while True:
         print("\t -	Visualizar datos: Crear un dashboard que muestre el crecimiento de la tienda en función de las ventas, los productos y el comportamiento de los clientes.")
         print("\t -	Modelar datos: Aplicar algoritmos para predecir comportamientos futuros, como la demanda de productos o la tendencia de ventas.\n")
     
-    elif opcion == 2:
+    elif opcion == "2":
         print("\nFUENTE: Los datos fueron generados con fines educativos. Las bases de datos se crearon para el aprendizaje de análisis, visualización y modelado de datos. Asimismo, presentan poca o nula consistencia, así como datos faltantes o nulos, por lo que, para fines prácticos, se asemejan a los datos de un negocio real.")
         print("\nDEFINICIÓN: La base de datos estructurada en formato Excel representa de manera integral a la “Tienda Aurelio”, e incluye el catálogo de productos, el registro de clientes y las operaciones de venta.")
         print("\t -	Productos (productos.csv): Inventario o catálogo de artículos disponibles.")
@@ -33,7 +32,7 @@ while True:
         print("\t -	Detalle de Ventas (detalle_ventas.csv): Desglose de los productos incluidos en cada venta. Es decir, detalla los productos vendidos en cada transacción.\n")
 
         
-    elif opcion == 3:
+    elif opcion == "3":
         
         print("\nESTRUCTURA POR TABLA: A continuación se detalla la estructura de cada tabla, incluyendo: el nombre, el archivo del dataset, la cantidad de filas, los campos, sus tipos de dato y las escalas de medición.")
        
@@ -74,9 +73,7 @@ while True:
         print("| precio_unitario".ljust(20)+ "| float".ljust(20)+ "| Razon ".ljust(20)+ "|".ljust(20))
         print("| importe".ljust(20)+ "| float".ljust(20)+ "| Razon ".ljust(20)+ "|".ljust(20)+ "\n ")
 
-
-
-    elif opcion == 4:
+    elif opcion == "4":
         print("\nESCALAS DE MEDICIÓN: A continuación se detallan las escalas de medición con ejemplos aplicados al proyecto cuando corresponda. De no ser así, se incluye un ejemplo de referencia con fines didácticos.")
         print("- Nominal: Categórica sin orden")
         print("\t o  Ejemplos: id, nombre de cliente, email, ciudad, medio de pago, nombre de prodcuto.") 
@@ -88,7 +85,7 @@ while True:
         print("- Razón: Numérica con cero absoluto")
         print("\t o	Ejemplos: precio unitario, cantidad, importe.\n ") 
    
-    elif opcion == 5:
+    elif opcion == "5":
         print("\n Se ha utilizado Copilot con el fin de: ")
         print("\t -	El desarrollo del código inició con un enfoque básico, utilizando conocimientos previos de otros lenguajes de programación. Esto, sumado a la incorporación tardía al curso, el retraso en actividades y el limitado dominio de Python, resultó en una implementación simple con líneas de código que podrían optimizarse para mayor eficiencia.")
         print("\t -	Corregir los tipos de datos de las columnas precio_unitario e importe, cambiándolos de INT a FLOAT para permitir el almacenamiento de valores decimales.")
@@ -108,9 +105,9 @@ while True:
 
         print("\t -	A través del DER se puede observar que: \n")
         print("\t\t a.	la tabla Detalle_Ventas presenta los atributos nombre_producto y precio_unitario de forma redundante, ya que esta información puede y debe obtenerse de la tabla de Productos a través de la clave foránea de id_producto. ")
-        print("\t\t b.	La tabla Ventas presenta los atributos nombre_cliente y el email de forma redundante, ya que está información puede o se debe obtenerse de la tabla Clientes a través de la clave foránea id_cliente.")
+        print("\t\t b.	La tabla Ventas presenta los atributos nombre_cliente y el email de forma redundante, ya que está información puede o se debe obtenerse de la tabla Clientes a través de la clave foránea id_cliente. \n")
 
-    elif opcion == 6:
+    elif opcion == "6":
         print("Muchísimas gracias por visitar la Tienda Aurelio.\n")
         break
     else:
